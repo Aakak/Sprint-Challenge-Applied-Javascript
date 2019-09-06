@@ -9,7 +9,7 @@
 
 /* HTML:
   <div class="carousel">
-    <div class="left-button"> < </div>
+    <div class=""left-button> < </div>
     <img src="./assets/carousel/mountains.jpeg" />
     <img src="./assets/carousel/computer.jpeg" />
     <img src="./assets/carousel/trees.jpeg" />
@@ -17,3 +17,19 @@
     <div class="right-button"> > </div>
   </div>
 */
+
+function carouselTabs(imgUrl) {
+  const newCarousel = document.createElement("div"),
+    newImage = document.createElement("img"),
+    newleftButton = document.createElement("div"),
+    newRightButton = document.createElement("div");
+
+  newCarousel.classList.add("carousel");
+  newImage.classList.add("src");
+  newLeftButton.classList.add("left-button");
+  newRightButton.classList.add("right-button");
+
+  newCarousel.appendChild(newImage);
+  newCarousel.appendChild(newLeftButton);
+  newCarousel.appendChild(newRightButton);
+}
